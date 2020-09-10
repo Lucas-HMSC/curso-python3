@@ -1,11 +1,11 @@
 from PIL import Image, ImageDraw
 #Variaveis globais
-dim = 300
-img = Image.new('RGB', (dim, dim), "black")
+dim = 300 #Define a dimensão da imagem a ser gerada
+img = Image.new('RGB', (dim, dim), "black") #Cria a imagem com as dimensões especificadas e com o background preto
 x = 0
-r = 100
+r = 100 #Raio do círculo a ser gerado
 y = r
-offset = 150
+offset = 150 #Distanciamento da borda, definido como metade da dimensão para que o circulo gerado esteja centralizado
 
 #Função para desenhar os pixel's
 def drawcircle(x, y, offset):
