@@ -12,6 +12,7 @@ matriz = [
 ]
 
 
+# Função parar gerar a representação gráfica
 def gerarImagem(matriz):
     from PIL import Image, ImageDraw
     dim = 300  # Define a dimensão da imagem a ser gerada
