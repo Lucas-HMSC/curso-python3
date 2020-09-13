@@ -115,7 +115,7 @@ def gerarImagem(matriz):
     img.show()
 
 # Função para binarizar a matriz (15 para branco / 0 para preto)
-def limiarização (matriz):
+def limiarizacao (matriz):
     limiar = 7
     for i, linha in enumerate(matriz):
         for j, numero in enumerate(linha):
@@ -126,7 +126,7 @@ def limiarização (matriz):
             matriz[i][j] = numero
 
 
-limiarização(matriz)
+limiarizacao(matriz)
 print(matriz)
 
 option = int(input('Deseja visualizar a representação gráfica? [0 para Não / 1 para Sim]: '))
