@@ -20,9 +20,9 @@ def gerarImagem(matriz):
     cor = 'cor'
     for linha in matriz:
         for numero in linha:
-            if numero == 0:
-                cor = 'black'
-                #Preto
+            if numero == 15:
+                cor = 'white'
+                #Branco
                 #Primeiro Quadrante
                 draw.ellipse([(120, 20), (140, 40)], fill=cor, outline=cor, width=1)
                 draw.ellipse([(120, 42), (140, 62)], fill=cor, outline=cor, width=1)
@@ -63,9 +63,9 @@ def gerarImagem(matriz):
                 draw.ellipse([(164, 220), (184, 240)], fill=cor, outline=cor, width=1)
                 draw.ellipse([(164, 242), (184, 262)], fill=cor, outline=cor, width=1)
                 draw.ellipse([(164, 264), (184, 284)], fill=cor, outline=cor, width=1)
-            elif numero == 15:
-                cor = 'white'
-                #Branco
+            elif numero == 0:
+                cor = 'black'
+                #Preto
                 #Primeiro Quadrante
                 draw.ellipse([(20, 20), (40, 40)], fill=cor, outline=cor, width=1)
                 draw.ellipse([(20, 42), (40, 62)], fill=cor, outline=cor, width=1)
@@ -123,7 +123,7 @@ def limiarização (matriz):
     limiar = 7
     for i, linha in enumerate(matriz):
         for j, numero in enumerate(linha):
-            if numero < 7:
+            if numero > 7:
                 numero = 15
             else:
                 numero = 0
