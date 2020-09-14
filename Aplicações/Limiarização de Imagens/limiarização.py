@@ -13,7 +13,7 @@ matriz = [
 
 
 # Função parar gerar a representação gráfica
-def gerarImagem(matriz):
+def gerarImagem():
     from PIL import Image, ImageDraw
     dim = 300  # Define a dimensão da imagem a ser gerada
     img = Image.new('RGB', (dim, dim), 'rgb(150, 75, 0)')  # Cria a imagem com as dimensões especificadas e com o background marrom
@@ -134,5 +134,5 @@ option = int(input('Deseja visualizar a representação gráfica? [0 para Não /
 if option == 0:
     print('Você escolheu sair.')
 elif option == 1:
-    gerarImagem(matriz)
+    gerarImagem()
     print('Imagem gerada.')
